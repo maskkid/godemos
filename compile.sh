@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export GOPATH=$PWD 
+export GOPKG=$GOPATH/pkg
 echo ++++++++++++++++++++++
 echo main.go building ...
 echo ++++++++++++++++++++++

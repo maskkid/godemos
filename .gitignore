@@ -23,6 +23,14 @@ _testmain.go
 *.test
 *.prof
 
+# simo
+*.bin
+*.swo
+*.swp
+
 src/github.com/
 src/golang.org/
 src/gopkg.in/
+pkg/
+pholcus_pkg/
+bin/

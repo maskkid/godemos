@@ -1,15 +1,12 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"./demos"
+)
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
+	demos.GinSimple() // gin web框架测试
+	// demos.PholcusDemoRun() // 蜘蛛测试
 
-	})
-	r.Run() // listen and serve on 0.0.0.0:8080
-
+	// demos.BeegoDemoRun()
 }
