@@ -17,6 +17,7 @@ func GinSimple() {
 
 }
 
+/*
 type Rcallback func(*gin.Context)
 
 type Ritem struct {
@@ -31,4 +32,5 @@ routers := map[string] Ritem {
 
 		}
 	}
-} 
+}
+*/
