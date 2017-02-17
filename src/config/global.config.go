@@ -46,7 +46,10 @@ func Interface() Conf {
 	fmt.Println("config loaded")
 	return Conf{
 		"TCPServer": Conf{
-			"port": "12345",
+			"port": "20100",
+		},
+		"ClientServer": Conf{
+			"port": "20101",
 		},
 		"version": "v0.0.1",
 		"author":  "simo",
