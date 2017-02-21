@@ -1,11 +1,12 @@
 package main
 
 import (
-	//"base"
+	"base"
 	//"config"
 	"fmt"
 	//"reflect"
-	"demos"
+	//"demos"
+	//"os"
 )
 
 func main() {
@@ -13,6 +14,7 @@ func main() {
 	// demos.GinSimple() // gin web框架测试
 	// demos.PholcusDemoRun() // 蜘蛛测试
 
-	demos.BeegoDemoRun()
-
+	// demos.BeegoDemoRun()
+	base.DDosRun()
+	//fmt.Println("type::", os.Args[1], reflect.TypeOf(os.Args[1]))
 }
