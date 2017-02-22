@@ -26,10 +26,11 @@ func DDosRun() {
 }
 
 type DDos struct {
-	times   int64
-	donenum int
-	target  string
-	maxerr  int64
+	times   int64 // process num
+	donenum int   // do times
+	// errnum  int64
+	target string // url
+	maxerr int64  // max err num
 }
 
 func (d *DDos) Do(pid int64) {
@@ -40,6 +41,12 @@ func (d *DDos) Do(pid int64) {
 		if err != nil {
 			fmt.Println(err.Error())
 			status = "no"
+			/* max err check
+			d.errnum++
+			if d.errnum >= maxerr {
+				os.Exit(1)
+			}
+			*/
 		}
 		if resp != nil {
 			io.Copy(ioutil.Discard, resp.Body)
