@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      On the Road, Walk hard! 在路上，永不止步！ &middot; 
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script src="/public/js/jquery.js"></script>
+</head>
+
+
+  <body class="theme-base">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item active" href="/">本博</a>
+    <a class="sidebar-nav-item" href="http://blog.onrd.net">旧博</a>
+    <a class="sidebar-nav-item" href="https://github.com/maskkid">Github</a>
+    <a class="sidebar-nav-item" href="https://git.oschina.net/evekcin")>Git@osc</a>
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/resume">简历</a>
+        
+      
+    
+
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <ul>
+    <li><em style="display:inline-block; width:4em; font-style:normal">Total :</em> (30)</li>
+    
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">other</em>(5)</li>
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">tech</em>(11)</li>
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">diary</em>(8)</li>
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">family</em>(1)</li>
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">game</em>(4)</li>
+    
+      <li>├ <em style="display:inline-block; width:4em; font-style:normal">data structure</em>(1)</li>
+    
+    </ul>
+  </div>
+
+  <div class="sidebar-item">
+    <p>这是一个纯静态的文章留存地址，主要记录技术文章。.</p>
+    <p> &copy; 2017. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">On the Road, Walk hard! 在路上，永不止步！</a>
+            <small></small>
+          </h3>
+
+<!--           <div class="doing">
+            
+            
+              ①<del>ThinkPHP 源码分析 100%</del>；
+            
+              ②<del>开车 - 100%</del>；
+            
+          </div> -->
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/02/15/one-tech-plan">
+        <em>tech</em> 2017年一个私有项目计划
+      </a>
+      <span class="post-date">2017.02.15</span>
+    </h1>
+<!--     <h2>立意</h2>
+
+<p>以前一直想做个利用手机传感器控制应用或者游戏的东西，最近对构思基本完善，准备用一年的业余时间玩玩。</p>
+
+<h2>架构</h2>
+<div class="highlight"><pre><code class="language-" data-lang="">主要由服务端、采集端、客户端、管理端组成。
+</code></pre></div>
+<h3>业务图</h3>
+
+<p><img src="/public/image/2017-one-tech-plan.png" alt="简单架构图"></p>
+
+<h3>技术需求</h3>
+
+<ul>
+<li>java/android oc/ios</li>
+<li>cpp/go</li>
+<li>html/css/js/web</li>
+<li>cocos2d/three</li>
+</ul>
+
+<h3>开发安排</h3>
+
+<h4>第一期（3个月）</h4>
+
+<ul>
+<li>andorid采集数据、连接服务端发送数据</li>
+<li>主要完成服务端数据接收、转发数据到客户端（主要TCP/UDP/WS协议）</li>
+<li>完成数据端 传感器数据解析 （比如三轴传感器的数据解析成）</li>
+<li>基础客户端（基于web或者其他协议的数据展示）</li>
+</ul>
+
+<h4>第二期</h4>
+
+<ul>
+<li>ios采集数据端</li>
+<li>采集端可以选择控制的客户端</li>
+<li>服务端基本隔离出解析（算法模块）、数据收发模块、转发模块</li>
+<li>基于数据库的管理配置（服务端配置-解决连接数等控制；采集端配置-解决权限实时控制）</li>
+<li>完成一个基本的游戏，实现控制</li>
+</ul>
+
+<h4>第三期</h4>
+
+<ul>
+<li>采集端优化（ui、连接稳定性、本地缓存）</li>
+<li>服务端优化（数据收发的队列管理系统）</li>
+</ul>
+
+<h4>第四期</h4>
+
+<ul>
+<li>解决部分并发问题</li>
+<li>【暂无能力】分布式部署服务端</li>
+<li>传感器数据解析算法（有非常完善的解析，包括多种动作）</li>
+<li>客户端实现应用平台化，制作客户端SDK包 </li>
+</ul>
+
+<h3>备注</h3>
+
+<ul>
+<li>项目可能会停留在第一期完成。</li>
+<li>困难不少，IOS考虑二期拉入其他开发。</li>
+<li>根据发展，代码成熟考虑开源。</li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/02/06/the_last_year">
+        <em>other</em> 2016年总结
+      </a>
+      <span class="post-date">2017.02.06</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">        纯流水账
+</code></pre></div>
+<h2>工作</h2>
+
+<p>工作的问题，这一年半年换了一家公司TF。</p>
+
+<p>TF所在的团队，氛围上很喜欢，技术收获谈不上，毕竟有官僚背景的作风，更多的是非常纯粹的用结果体现价值。我做前后端甚至服务器小架构，其中，后端部分做的并不好。在TF的那半年时间里，把之前上一家公司8年的加班时间都补上了。好多时间是997，9-12-6，做的还算开心，但是陪家人时间太少，身体也吃不消了，正好赶上有哥们再三邀我，终于在8月底离职。</p>
+
+<p>新的公司是SK，很工作环境很互联网的一家分公司。工作主要是前端，部分后端和疑难杂症也做。工作强度还好，介于前两家公司之间。晚上会义务加班1~2小时，周末不加。</p>
+
+<h2>生活</h2>
+
+<p>家人身体都好，棉袄越来越懂事儿。比较大的事情，淘了一个小房子，手续各种波折，目前八字暂无一撇。</p>
+
+<h2>遗憾</h2>
+
+<p>工作上，没有在TF走的更久，做的更好。</p>
+
+<p>被贷款这个东西栓的太紧了，估计好计划会延迟3~5年。</p>
+
+<h2>新计划</h2>
+
+<p>技术学习上，golang非常喜欢，也做了一个比较完整的项目。webserver+tcp/udpserver。</p>
+
+<p>生活上，摇号估计没戏，一定要来个外地牌照的小车了。</p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/03/04/new_work_strip">
+        <em>other</em> 8年来首次参加系列面试-营养
+      </a>
+      <span class="post-date">2016.03.04</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    条条大路通罗马异或殊途同归，选择不一定找到最好，但是会找到当下最适合的。得失参半，半参半悟。
+</code></pre></div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/02/25/step_blink">
+        <em>other</em> 补充半年的记录空白
+      </a>
+      <span class="post-date">2016.02.25</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    生活给予我们的是一种经历，掺杂的情感由自己控制。悲欢离合，怒喜思悲恐。所谓一粒沙里看世界，又何尝不是千人眼中的哈姆雷特？
+    我，要更加努力，永不止步。
+</code></pre></div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/10/28/oct">
+        <em>diary</em> 10月
+      </a>
+      <span class="post-date">2015.10.28</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    重复的事情容易让人变懒，所以，坚持才被提高为口号。
+</code></pre></div>
+<p><strong>工作</strong></p>
+
+<ul>
+<li>重复5年前的东西，复制粘贴，感觉他评</li>
+<li>被X同事说，仅知道的多而已。不解释。王朔说，成功不就是赚点钱，被傻逼们知道了么;我想说，低调在浮躁的氛围就是错误，但我想固执的错下去。</li>
+</ul>
+
+<p><strong>学习</strong></p>
+
+<ul>
+<li>专心在c++上，opencv+cocos2d-x，最近10天在QT上。思维都是相通的，信号槽的机制，确实是个亮点。我看就是个观察者模式，但是c++实现出来，还是非常让人佩服。c++把基础也理解的舒服多了，包括与或非左移右移/栈/堆动态分配等</li>
+<li>简单回顾了很久之前在kp上看得几本书
+
+<ul>
+<li>《数学之美》：真是一本好书，里面好多数学+应用的例子，比如，理解信息熵/互信息/索引，就是基本的数学应用。在比如，布尔理论到0/1在80年后被使用，感悟良多</li>
+<li>《浪潮之巅》：对科技时序宏观述说，各个国际公司的错综复杂，各种飞跃技术的革命。对于能拽住尾巴的码农来说，好像被拔高了一样，热血沸腾。</li>
+</ul></li>
+</ul>
+
+<p><strong>生活</strong></p>
+
+<ul>
+<li>还是最爱的点点大人，已经能箭步如飞了。淘气的很，破坏之王！</li>
+<li>一个大计划在酝酿，希望能顺利。</li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/10/13/what_done_at_mounth9">
+        <em>diary</em> 9月
+      </a>
+      <span class="post-date">2015.10.13</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    又是一个月，精力完全分配在生活和工作上了
+</code></pre></div>
+<p><strong>技能</strong>
+* 用speedPHP改了一个restful模式，其实还是思想分层而已，依据偷懒/可发展原则。</p>
+
+<p><strong>读书</strong></p>
+
+<ul>
+<li>概览了几本书，《王爽汇编》，《c++ primer》，《c++ 程序设计》</li>
+<li>试玩了经典框架openCV</li>
+</ul>
+
+<p><strong>生活</strong></p>
+
+<ul>
+<li>点点大人会走了，在生日两天后，忽然就长大了，以后还会更快吧。自从会走了以后，很少主动往大人怀里扎了，呵呵呵，小情人越大可能就越离心啊：）好好享受妻女这一刻吧</li>
+<li>看了几部地电影，打发时间/刺激感观的美国大片，还有一部分非常不错的片子《十二公民》，改编的美国58年老片《十二怒汉》，这种片子其实应该是给那些喷子和五毛看得，但是理解力是需要渐进的，只好虐一下我们这些傲娇的理性人</li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/09/06/what_done_at_8_9">
+        <em>diary</em> 懒懒的没更新,这半个月究竟干什么去了
+      </a>
+      <span class="post-date">2015.09.06</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    好久不写，简单总结一下最近的脑暴和生活
+</code></pre></div>
+<p><strong>技能</strong></p>
+
+<ul>
+<li>所有的业余时间都用在做一个PC端软件。基本完成基于火狐内核的浏览器工具，功能主要有：代理切换，鼠标移动/点击控制，其他功能模拟正常浏览器。期间跳坑无数，从内置到webkit到gecko，每个都是一把心酸两把泪，不详述！</li>
+<li>惭愧的没有第二条，但是接触到一个词和一个软件：ETL和autoit，这也许加速A计划的进行。</li>
+</ul>
+
+<p><strong>生活</strong></p>
+
+<ul>
+<li>70年阅兵3天假期，回家发现点点同学的诸多缺点和陋习，必须强加纠正</li>
+<li>拖延症和健忘症愈发厉害</li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/19/FEfreame_basein_reactjs_design">
+        <em>tech</em> 基于ReactJs的单页应用框架设计
+      </a>
+      <span class="post-date">2015.08.19</span>
+    </h1>
+<!--     <p><strong>基本设计</strong></p>
+
+<p>基于hash的请求处理-&gt;映射返回数据流-&gt;逻辑层-&gt;更新客户端</p>
+
+<p><strong>第三方</strong></p>
+
+<ul>
+<li>store 本地存储</li>
+<li>router 基于hash的路由系统</li>
+<li>promise 请求回调萌萌哒</li>
+<li>react 显示层组件框架</li>
+</ul>
+
+<p><strong>代码</strong></p>
+
+<pre>
+simoD = {
+    _us = { // api urls
+        'get_users' : 'http://xxxx.xxx'
+    },
+
+    A : {
+        'get_users' : function(){
+            ajax.get/post -> this._us['get_users'] -> backfn // Promise.js
+        }
+    }
+}
+
+simoV = {
+    'a' : react.createClass(a)
+}; // react widget
+
+simoC = {
+    'index' : function(d) {}
+}
+
+simoR = {
+    R : q.js, // 需要回传地址解析 尤其是参数回传，需要写一套路由系统
+    conf : {
+        'r1' : fn1,
+        ...
+        return this;
+    },
+    r : function() {
+        var R = this.R;
+        _.map(this.conf, function(){
+            R.reg(x)
+        })
+    },
+    u : function(u){
+        this.R.use(u)
+    }
+}
+</pre>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/18/IPhelper_class">
+        <em>tech</em> IPhelper简类
+      </a>
+      <span class="post-date">2015.08.18</span>
+    </h1>
+<!--     <p>基础助手类，设计包含配置加载/ip数字互转/ip归属地查询/访问者ip获取/ip的段归属验证。</p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/12/php_frame_design_init">
+        <em>tech</em> php框架设计稿
+      </a>
+      <span class="post-date">2015.08.12</span>
+    </h1>
+<!--     <p>很简单的框架，适合自己用：）</p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/11/Weixin_helper_class_design">
+        <em>tech</em> 微信api微框架设计
+      </a>
+      <span class="post-date">2015.08.11</span>
+    </h1>
+<!--     <p>最近公司做微信帐号绑定，时间紧没有做完所有接口，仅实现了一个可扩展的类库。按照个人理解，比较合理的weixin.frame设计如下：</p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/11/data_structure_lesson1">
+        <em>data structure</em> 数据结构算法笔记-1
+      </a>
+      <span class="post-date">2015.08.11</span>
+    </h1>
+<!--     <p><strong>鱼C笔记</strong></p>
+
+<p>时间空间复杂度 O(n),logN,[n^2]</p>
+
+<p><strong>常用数据结构和算法</strong></p>
+
+<ul>
+<li><p>数据结构</p>
+
+<ul>
+<li>散列 松耦合</li>
+<li>线性表 1-1</li>
+<li>二叉树 1-N</li>
+<li>图</li>
+</ul></li>
+<li><p>算法</p>
+
+<ol>
+<li>常用排序
+
+<ul>
+<li>冒泡</li>
+<li>插入</li>
+<li>希尔
+<img src="/public/image/shell-sort.png" alt="读书万卷"></li>
+</ul></li>
+<li>快速排序
+
+<ul>
+<li>x</li>
+<li>y</li>
+</ul></li>
+<li>查找</li>
+</ol></li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/07/31/simo_ocr_lesson">
+        <em>tech</em>  个人OCR学习使用 
+      </a>
+      <span class="post-date">2015.07.31</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">        几年前接触ocr的东西，没有正式使用，只训练了几组中文字库就略过了。这次朋友正好用到，重温一边，软件和过程都整理文档方便备用。真正要做到ocr高识别，必须精通算法和神经网络。此篇为外行浅入，玩玩总可以吧。
+        感谢tesseract的开源，感谢google的各种支持，感谢网友们无私的文档奉献。
+</code></pre></div>
+<p><strong>语言、编译环境</strong></p>
+
+<ul>
+<li>java </li>
+<li>python（2.7） pip PIL</li>
+</ul>
+
+<p><strong>软件介绍</strong>
+            <img src="/public/image/ocr-soft.png" alt="ocr soft list and the docs">
+            <img src="/public/image/ocr-soft1.png" alt="ocr soft"></p>
+
+<ul>
+<li>tesseract 30年前HP的开源的作品，后来google接管了。ocr不二的推荐。</li>
+<li>jTessBoxEditor 库文件编辑工具</li>
+<li>css222.py 图片二值化脚本，针对rgb值，还能再优化。</li>
+<li>ttf2box.bat ttf文件调用tesseract命令</li>
+<li><p>create.bat 最终生成训练库文件的脚本</p></li>
+<li><p>tesseract </p>
+
+<ul>
+<li>下载地址：https://code.google.com/p/tesseract-ocr/downloads/list</li>
+</ul></li>
+<li><p>jTessBoxEditor 训练工具</p>
+
+<ul>
+<li>http://sourceforge.net/projects/vietocr/files/jTessBoxEditor/</li>
+</ul></li>
+</ul>
+
+<p><strong>操作流程</strong></p>
+
+<ol>
+<li>使用jTessBoxEditor拼合库文件， 格式ttf</li>
+<li>通过css222.py 进行二值化</li>
+<li>通过ttf2box.bat 生成box文件</li>
+<li>创建必须文件，参考文档。 font啊，charset啊等等</li>
+<li>通过create.bat生成最终库文件 (比如叫 abc.库文件后缀)</li>
+<li>把库文件导入tesseract的库目录</li>
+<li>识别：通过tesseract 目标文件 结果文件 -l abc</li>
+</ol>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/07/29/thinkphp_frame_source_code">
+        <em>tech</em> ThinkPHP 源码分析
+      </a>
+      <span class="post-date">2015.07.29</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">        ThinkPHP 3 
+        利用大概一天的时间，把ThinkPHP的源码看了一些，主要是对Tk框架设计进行分析学习，在php框架的设计上吸收些知识。
+        主要从目录结构，框架的流程，以及定制化的设计上进行记录备用。
+</code></pre></div>
+<ul>
+<li><p>目录结构[官方文档部分内容和文件结构和3.*版有偏差]</p>
+
+<ul>
+<li><p>框架基本结构</p>
+<div class="highlight"><pre><code class="language-" data-lang="">├─ThinkPHP.php     框架入口文件
+ ├─Common 框架公共文件
+ ├─Conf 框架配置文件
+ ├─Extend 框架扩展目录
+ ├─Lang 核心语言包目录
+ ├─Lib 核心类库目录
+ │  ├─Behavior 核心行为类库
+ │  ├─Core 核心基类库
+ │  ├─Driver 内置驱动
+ │  │  ├─Cache 内置缓存驱动
+ │  │  ├─Db 内置数据库驱动
+ │  │  ├─TagLib 内置标签驱动
+ │  │  └─Template 内置模板引擎驱动
+ │  └─Template 内置模板引擎
+ └─Tpl 系统模板目录
+</code></pre></div></li>
+<li><p>应用的基本结构</p>
+<div class="highlight"><pre><code class="language-" data-lang="">├─index.php     项目入口文件
+ ├─Common 项目公共文件目录
+ ├─Conf 项目配置目录
+ ├─Lang 项目语言目录
+ ├─Lib 项目类库目录
+ │  ├─Action Action类库目录
+ │  ├─Behavior 行为类库目录
+ │  ├─Model 模型类库目录
+ │  └─Widget Widget类库目录
+ ├─Runtime 项目运行时目录
+ │  ├─Cache 模板缓存目录
+ │  ├─Data 数据缓存目录
+ │  ├─Logs 日志文件目录
+ │  └─Temp 临时缓存目录
+ └─Tpl 项目模板目录
+</code></pre></div></li>
+</ul></li>
+<li><p>主流程</p>
+
+<ul>
+<li>index.php - 入口文件
+
+<ul>
+<li>ThinkPHP.php [Think::start()] - 主类，define主要变量
+
+<ul>
+<li>ThinkPHP.class.php [App::run()] - 核心类库，注册autoload/错误处理/加载系统和应用配置文件
+
+<ul>
+<li>App.class.php [ run -&gt; init[Dispatch::dispatch 解析url] + exec ] - 应用主类，解析MVC，解析过滤参数，反射调用对应的action</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>主要文件说明[待续]</p>
+
+<ul>
+<li>functions.php</li>
+<li>Model.class.php</li>
+<li>Controller.class.php</li>
+<li>Action.class.php</li>
+<li>Cache</li>
+</ul></li>
+<li><p>定制化</p>
+
+<ul>
+<li>修改模板调用方式。view层只原生php代码。添加自定义模板方法,模仿目前公司框架的形式。 functions.php添加 simotpl(),simoview()两个方法</li>
+</ul></li>
+</ul>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/07/24/react_base">
+        <em>tech</em> ReactJs 总结
+      </a>
+      <span class="post-date">2015.07.24</span>
+    </h1>
+<!--     <p><strong>简介</strong></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/07/15/life_and_work">
+        <em>diary</em> 2015.06-2015.07 小结
+      </a>
+      <span class="post-date">2015.07.15</span>
+    </h1>
+<!--     <p><strong>Life</strong></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/05/27/lost_now">
+        <em>diary</em> 学习方向迷失mark新路
+      </a>
+      <span class="post-date">2015.05.27</span>
+    </h1>
+<!--     <p><strong>碎碎念</strong></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/05/14/arvr">
+        <em>tech</em> ARVR-现实扩展-虚拟现实
+      </a>
+      <span class="post-date">2015.05.14</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    最近十来天基本关注游戏，从2D-3D，3D的学到的大知识点有：建模（blender、3dmax、maya），动作游戏（unity3D、threejs）。
+
+    因为unity3D主要的脚本是C#，期间学习C#、asp.net一天，基本了解asp.net网站架构的过程和基本原理，可处理asp.net网站的一般问题。
+
+    这里主要介绍下个人比较感兴趣的ARVR。 
+</code></pre></div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/05/06/recent_summary">
+        <em>diary</em> 最近几天小总结
+      </a>
+      <span class="post-date">2015.05.06</span>
+    </h1>
+<!--     <div class="highlight"><pre><code class="language-" data-lang="">    目前对个人网站开发技能状态不满，知识面可以，深度差。这几天有几件事儿对此算是一个好处：基本上说上来的难题都能立即想到解决方案。坏处：处理过程需要百度陪伴。比如做模拟登录，php snoopy（curl、fsocket）无法实现js交互内容处理，立即想到使用phantom处理，当需要模拟的时候，了解http协议头设置，了解代理配置，发送处理了解数据异步、同步处理，数据库操作，接口设计。
+</code></pre></div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/29/cocos2d-js_log_4">
+        <em>game</em> Cocos2d-js总结笔记-4[扑克牌类游戏设计]
+      </a>
+      <span class="post-date">2015.04.29</span>
+    </h1>
+<!--     <h3>关于扑克牌类游戏的设计总结</h3>
+
+<p>个人认为，这类游戏，主要包含以下几部分：</p>
+ -->
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2">上一页</a>
+  
+  
+    <span class="pagination-item newer">下一页</span>
+  
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+<script src="/public/js/jquery.js"></script>
+<script>
+;(function($){
+var _c={length:0},_pre = 'cate_style';
+$('.posts .post-title').each(function(){
+  var $em = $(this).find('em').eq(0),
+  emv = $em.text();
+  if(!_c[emv]) {
+    _c[emv] = _pre+'_'+_c.length;
+    _c.length++;
+  }
+  $em.addClass(_pre + ' ' + _c[emv]);
+})
+}(jQuery));
+</script>
+<span style="display:none"><script>
+var _hmt = _hmt || [];
+(function(){var hm = document.createElement("script"); hm.src = "//hm.baidu.com/hm.js?b357fbdb973b482aa5e62f39cd5952f9";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span>
+  </body>
+</html>

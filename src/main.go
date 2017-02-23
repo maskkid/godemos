@@ -15,6 +15,7 @@ func main() {
 	// demos.PholcusDemoRun() // 蜘蛛测试
 
 	// demos.BeegoDemoRun()
-	base.DDosRun()
+	// base.DDosRun() // ddos 测试代码
+	base.PackfileRun()
 	//fmt.Println("type::", os.Args[1], reflect.TypeOf(os.Args[1]))
 }
