@@ -1,21 +1,21 @@
 package main
 
 import (
-	"base"
+	//"base"
 	//"config"
 	"fmt"
 	//"reflect"
-	//"demos"
+	"demos"
 	//"os"
 )
 
 func main() {
 	fmt.Println("Main process running...")
 	// demos.GinSimple() // gin web框架测试
-	// demos.PholcusDemoRun() // 蜘蛛测试
+	demos.PholcusDemoRun() // 蜘蛛测试
 
 	// demos.BeegoDemoRun()
 	// base.DDosRun() // ddos 测试代码
-	base.PackfileRun()
+	// base.PackfileRun()
 	//fmt.Println("type::", os.Args[1], reflect.TypeOf(os.Args[1]))
 }
