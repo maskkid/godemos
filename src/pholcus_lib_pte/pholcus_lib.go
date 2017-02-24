@@ -6,6 +6,7 @@ import (
 	//_ "pholcus_lib_pte/baidusearch"
 	//_ "pholcus_lib_pte/kaola"
 	_ "pholcus_lib_pte/test1"
+	_ "pholcus_lib_pte/dinghuo123"
 )
 /*
 import (
