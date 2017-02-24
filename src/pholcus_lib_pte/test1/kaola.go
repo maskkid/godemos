@@ -35,16 +35,30 @@ var Youzan = &Spider{
 	// Pausetime: 300,
 	// Keyin:   KEYIN,
 	// Limit:        LIMIT,
-	EnableCookie: true,
+	EnableCookie: false,
 	RuleTree: &RuleTree{
 		Root: func(ctx *Context) {
-      ctx.AddQueue(&request.Request{Url: "https://h5.youzan.com/v2/showcase/homepage?kdt_id=18593404&reft=1487904400356_1487904504905&spm=ag18593404_f46395154_ag18593404", Rule: "获取版块URL"})
+      ctx.AddQueue(&request.Request{Url: "https://h5.youzan.com/v2/showcase/homepage?kdt_id=18593404&reft=1487908761842_1487908763635&spm=f46395154_ag18593404", Rule: "获取版块URL"})
 		},
 
 		Trunk: map[string]*Rule{
 
 			"获取版块URL": {
+			  /*
+        AidFunc: func(ctx *Context, aid map[string]interface{}) interface{} {
+          for i:=0;i<50;i++ {
+            logs.Log.Critical("aidFunc running")
+            ctx.AddQueue(&request.Request{
+              Url: "https://h5.youzan.com/v2/showcase/goods/allgoods?kdt_id=18593404&t=0&p=" + strconv.Itoa(i+1),
+              Rule: "商品列表",
+              Temp: map[string]interface{}{"goodsType": 123},
+            })
+          }
+          return nil
+        },
+        */
 				ParseFunc: func(ctx *Context) {
+				  logs.Log.Critical("商品入口解析ing....")
 					query := ctx.GetDom()
           total := query.Find(".js-all-goods span").Eq(0).Text()
           fmt.Println(total)
@@ -76,6 +90,7 @@ var Youzan = &Spider{
 
 			"商品列表": {
 				ParseFunc: func(ctx *Context) {
+				  logs.Log.Critical("商品列表解析ing....")
 					query := ctx.GetDom()
 					query.Find(".js-goods-card").Each(func(i int, s *goquery.Selection) {
 						if url, ok := s.Find("a").Attr("href"); ok {

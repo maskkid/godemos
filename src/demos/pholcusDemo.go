@@ -7,5 +7,5 @@ import (
 )
 
 func PholcusDemoRun() {
-	exec.DefaultRun("web")
+	exec.DefaultRun("cmd")
 }
