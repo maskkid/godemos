@@ -4,7 +4,7 @@ package pholcus_lib
 import (
 	// "github.com/henrylee2cn/pholcus/common/goquery" //DOM解析
 	"github.com/henrylee2cn/pholcus/app/downloader/request" //必需
-	// "github.com/henrylee2cn/pholcus/logs"           //信息输出
+	"github.com/henrylee2cn/pholcus/logs"           //信息输出
 	. "github.com/henrylee2cn/pholcus/app/spider"        //必需
 	. "github.com/henrylee2cn/pholcus/app/spider/common" //选用
 
@@ -37,7 +37,7 @@ var Lewa = &Spider{
 	EnableCookie: true,
 	RuleTree: &RuleTree{
 		Root: func(ctx *Context) {
-			ctx.AddQueue(&request.Request{Url: "http://sso.dinghuo123.com/", Rule: "登录页"})
+			ctx.AddQueue(&request.Request{Url: "http://sso.dinghuo123.com/login", Rule: "登录页"})
 		},
 
 		Trunk: map[string]*Rule{
@@ -54,7 +54,7 @@ var Lewa = &Spider{
 						ctx,
 						"选择入口",
 						"http://sso.dinghuo123.com/accountList",
-						ctx.GetDom().Find(".userlogin.lw-pl40"),
+						ctx.GetDom().Find("#myForm"),
 					).Inputs(map[string]string{
 						"username": "13920402226",
 						"password": "Snake13920402226",
@@ -68,6 +68,7 @@ var Lewa = &Spider{
 						"Body":   ctx.GetText(),
 						"Cookie": ctx.GetCookie(),
 					})
+          logs.Log.Critical(ctx.GetText())
 					ctx.AddQueue(&request.Request{
 						Url:    "http://accounts.dinghuo123.com/member",
 						Rule:   "登录后",
@@ -82,6 +83,7 @@ var Lewa = &Spider{
 						"Body":   ctx.GetText(),
 						"Cookie": ctx.GetCookie(),
 					})
+          logs.Log.Critical(ctx.GetText())
 					ctx.AddQueue(&request.Request{
 						Url:    "http://agent.dinghuo123.com/index",
 						Rule:   "个人中心",
@@ -96,9 +98,10 @@ var Lewa = &Spider{
 						"Body":   ctx.GetText(),
 						"Cookie": ctx.GetCookie(),
 					})
+          logs.Log.Critical(ctx.GetText())
 					ctx.AddQueue(&request.Request{
 						Url:    "http://agent.dinghuo123.com/index",
-						Rule:   "个人中心",
+						Rule:   "商品列表",
 						Header: http.Header{"Referer": []string{ctx.GetUrl()}},
 					})
 				},
@@ -111,6 +114,7 @@ var Lewa = &Spider{
 						"Body":   ctx.GetText(),
 						"Cookie": ctx.GetCookie(),
 					})
+          logs.Log.Debug("-------------------------商品列表")
 					/*
 					ctx.AddQueue(&request.Request{
 						Url:    "http://agent.dinghuo123.com/index",
